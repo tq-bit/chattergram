@@ -121,7 +121,7 @@ onUnmounted(() => close());
         v-if="hasChatPartner"
         @click-record="onClickRecord"
         @submit="createChatItem"
-        class="fixed bottom-0 right-0"
+        class="absolute bottom-0 right-0"
       ></app-chat-input>
 
       <!-- Alternative text to be shown when no chat partner is selected -->
@@ -131,7 +131,7 @@ onUnmounted(() => close());
       </div>
 
       <!-- First aid toolbar for WS connection or audio permissions -->
-      <section class="fixed bottom-12 left-0 w-full">
+      <section class="absolute bottom-12 left-0 w-full">
         <p v-if="socketStatus === 'closed'" class="p-1">
           You are not connected to the live chat.
           <app-button title="Try to reconnect" @click="onClickReconnect"> Click here </app-button>
