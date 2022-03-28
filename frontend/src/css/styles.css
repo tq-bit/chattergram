@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 overflow-hidden;
+}
+
+.icon {
+  @apply h-8 w-8 md:w-6 md:h-6;
+}
+
+/* Animations */
+
+/* Fade from right */
+.fade-from-right-enter-active,
+.fade-from-right-leave-active {
+  transition: all 0.5s ease;
+}
+.fade-from-right-enter-from,
+.fade-from-right-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+/* Fade from top */
+.fade-from-top-enter-active,
+.fade-from-top-leave-active {
+  transition: all 0.5s ease;
+}
+.fade-from-top-enter-from,
+.fade-from-top-leave-to {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+/* Just fade */
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.25s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+/* Grid sidebar bottom to top */
+.grid-sidebar-enter-active,
+.grid-sidebar-leave-active {
+  transition: all 0.5s ease;
+}
+.grid-sidebar-enter-from,
+.grid-sidebar-leave-to {
+  /* opacity: 0; */
+  transform: translateY(-100%);
+}
