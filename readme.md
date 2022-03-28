@@ -48,7 +48,7 @@ I've created it for the [Dev.to & Deepgram Hackathon](https://dev.to/devteam/joi
 
 You can try chattergram under https://chat.q-bit.me/.
 
-> The demo will remain up till the 31. of April. It runs on a 2GB DO Droplet.
+> The demo will remain up till the 31. of April or until my free Deepgram credit expires. It runs on a 2GB DO Droplet.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -193,7 +193,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Please tell me how you liked the submission. You can reach me on Twitter or on [dev.to](https://dev.to/tqbit)
+Please tell me how you liked the submission. You can reach me on Twitter or on [dev.to](https://dev.to/tqbit) (or via. Chattergram ;-))
 
 > Please note that I will not actively develop this app. If you find a breaking bug, please open an issue and I'll look into it .
 
@@ -202,8 +202,6 @@ Mail: [tobi@q-bit.me](mailto:tobi@q-bit.me) - Twitter: [@qbitme](https://twitter
 Project Link: [https://github.com/tq-bit/chattergram](https://github.com/tq-bit/chattergram)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
