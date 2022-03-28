@@ -3,6 +3,7 @@ withDefaults(
   defineProps<{
     labelPrefix?: string;
     label?: string;
+    placeholder?: string
     modelValue?: string | number;
     error?: string;
     required?: boolean;
@@ -40,7 +41,7 @@ const onInput = (ev: Event) => emit('update:modelValue', (ev.target as HTMLInput
       @input="onInput"
       :value="modelValue"
       :required="required"
-      :placeholder="labelPrefix ? labelPrefix + label?.toLowerCase() : label"
+      :placeholder="labelPrefix ? labelPrefix + label?.toLowerCase() : label || $attrs.placeholder as string"
     />
   </div>
 </template>
