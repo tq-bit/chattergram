@@ -42,6 +42,5 @@ const onInput = (ev: Event) => emit('update:modelValue', (ev.target as HTMLInput
       :required="required"
       :placeholder="labelPrefix ? labelPrefix + label?.toLowerCase() : label"
     />
-    <p class="text-red-500">{{ error }}</p>
   </div>
 </template>

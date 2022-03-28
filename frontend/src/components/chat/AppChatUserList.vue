@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { inject, Ref } from 'vue';
 import AppChatUserItem from './AppChatUserItem.vue';
+import AppInput from '../form/AppInput.vue';
 
 import { PublicUser } from '../../store/users';
 
@@ -15,6 +16,8 @@ const emit = defineEmits(['userSelected']);
     <ul
       class="absolute top-0 md:top-16 left-0 bottom-0 max-h-full w-full bg-gray-50 dark:bg-gray-800 text-gray-800 dark:text-gray-50 overflow-auto overflow-y"
     >
+
+    <app-input class="px-4" label="Search for users ..."> </app-input>
       <app-chat-user-item
         class="hover:bg-violet-600 hover:text-gray-100 transition-all cursor-pointer"
         :class="{
