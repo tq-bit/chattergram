@@ -25,7 +25,7 @@ const onInput = (ev: Event) => emit('update:modelValue', (ev.target as HTMLInput
 
 <template>
   <div>
-    <label v-if="label && variant !== 'chat'" class="font-semibold block mb-2">
+    <label v-if="label" class="font-semibold block mb-2">
       {{ label }}
       <span class="text-red-500" v-if="required">{{ requiredSign }}</span>
     </label>
@@ -35,7 +35,6 @@ const onInput = (ev: Event) => emit('update:modelValue', (ev.target as HTMLInput
       :class="{
         'text-gray-900 dark:text-gray-100 w-full border-b transition-all border-gray-600 focus:border-violet-600 focus:dark:border-violet-400 dark:border-gray-400 ':
           variant === 'default',
-        'rounded bg-slate-100 text-gray-900 border border-slate-300': variant === 'chat',
       }"
       v-bind="$attrs"
       @input="onInput"
