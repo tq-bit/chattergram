@@ -195,7 +195,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Please tell me how you liked the submission. You can reach me on Twitter or on [dev.to](https://dev.to/tqbit)
 
-> Please note that I will not actively develop this app. You're welcome to fork it and do your thing :-)
+> Please note that I will not actively develop this app. If you find a breaking bug, please open an issue and I'll look into it .
 
 Mail: [tobi@q-bit.me](mailto:tobi@q-bit.me) - Twitter: [@qbitme](https://twitter.com/qbitme)
 
