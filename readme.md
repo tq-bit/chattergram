@@ -48,7 +48,7 @@ I've created it for the [Dev.to & Deepgram Hackathon](https://dev.to/devteam/joi
 
 You can try chattergram under https://chat.q-bit.me/.
 
-> The demo runs on a 2GB droplet, please have mercy with it :-)
+> The demo will remain up till the 31. of April. It runs on a 2GB DO Droplet.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -197,8 +197,7 @@ Please tell me how you liked the submission. You can reach me on Twitter or on [
 
 > Please note that I will not actively develop this app. You're welcome to fork it and do your thing :-)
 
-Mail: [tobi@q-bit.me](mailto:tobi@q-bit.me)
-Twitter: [@qbitme](https://twitter.com/qbitme)
+Mail: [tobi@q-bit.me](mailto:tobi@q-bit.me) - Twitter: [@qbitme](https://twitter.com/qbitme)
 
 Project Link: [https://github.com/tq-bit/chattergram](https://github.com/tq-bit/chattergram)
 
@@ -212,10 +211,9 @@ Project Link: [https://github.com/tq-bit/chattergram](https://github.com/tq-bit/
 Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 
 * [Tsvetomira Dichevska](https://www.linkedin.com/in/tsvetomira-dichevska/) thank you for creating my Logo and help me figure out this idea
-* [Othneildrew's Best-README-Template](https://github.com/othneildrew/Best-README-Template)
-* [Heroicons](https://heroicons.com/)
-* [@sinclair/typebox](https://www.npmjs.com/package/@sinclair/typebox)
-* [Img Shields](https://shields.io)
+* [Othneildrew's Best-README-Template](https://github.com/othneildrew/Best-README-Template) which was used to write this template
+* [Heroicons](https://heroicons.com/) which are used throughout the application
+* [@sinclair/typebox](https://www.npmjs.com/package/@sinclair/typebox) for saving me the headache of typing twice
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
