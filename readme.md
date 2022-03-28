@@ -14,43 +14,12 @@
   </p>
 </div>
 
-
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#non-features">Non-Features</a></li>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-        <li><a href="#run-the-app">Run the app</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
-
-
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
 Chattergram is a full-stack Typescript chat application. With a particular extra:
 
-> It transcribes other people's voice messages into writte text for you (and vice versa)
+> It transcribes other people's (english) voice messages into writte text for you (and vice versa)
 
 [![Chattergram landingpage][product-screenshot]](#)
 
@@ -64,8 +33,8 @@ I've created it for the [Dev.to & Deepgram Hackathon](https://dev.to/devteam/joi
 - Above all: Voice message transcription from recorded audiofiles
 - User authentication
 - Persistent chats
-- Quick setup using docker-compose
-- Typed data structures & OpenAPI specification under `/docs`
+- Developed using Docker & docker-compose
+- Typed data structures & OpenAPI specification under `/api/docs`
 - Last but not least: Light & darkmode
 
 ### Non-features
@@ -74,6 +43,12 @@ I've created it for the [Dev.to & Deepgram Hackathon](https://dev.to/devteam/joi
 - Chat rooms
 - Automated CI/CD
 - Automated testing
+
+### Demo
+
+You can try chattergram under https://chat.q-bit.me/.
+
+> The demo runs on a 2GB droplet, please have mercy with it :-)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -108,7 +83,7 @@ Chattergram can be used in `production` and `development` mode. Before running a
 
 ### Prerequisites
 
-At a bare minimum, you need to have a working version of Docker and Docker-compose installed on your machine. Please follow the official docs to set these up:
+At a bare minimum, you need to have a working version of Docker and docker-compose installed on your machine. Please follow the official docs to set these up:
 
 * [Install Docker](https://docs.docker.com/engine/install/)
 * [Install Docker Compose](https://docs.docker.com/compose/install/)
@@ -125,7 +100,7 @@ For development, you will also need a working version of node & npm.
 
 ### Installation
 
-Chattergram uses the Deepgram API for STT. Yyou will need to register and grab an API key.
+Chattergram uses the Deepgram API for STT. So register and grab an API key.
 
 1. Create an account at [https://console.deepgram.com/signup](https://console.deepgram.com/signup)
 2. Create a new API key (persmission: Member is sufficient)
@@ -136,15 +111,17 @@ Chattergram uses the Deepgram API for STT. Yyou will need to register and grab a
 4. Create a `.env` file in the root directory (you can use the .env.example file for templating)
 5. Enter your API key under `DEEPGRAM_KEY`
 
-> Note: If you change global variables, in this file, you might have to adjust the respective docker-compose.(d|p).yaml file as well
+> Note: If you change global variables in this file, you have to adjust the respective docker-compose.(d|p).yaml file as well
 
 ### Run the app
 
 There are two docker-compose files in the root directory. Each runs a few simple steps to build and run the application in an appropriate setup.
 
-> Please note: I had problems running the app on a 1GB droplet on DO, Vite had problems with the allocated memory to Node.
+> Please note: I had problems running the app on a 1GB droplet on DO, Vite had problems with the allocated memory to Node, so there seems to be some minimum RAM requirement.
 
 **Run in dev mode**
+
+After cloning the repos, run:
 
 ```bash
 sudo docker-compose  --file docker-compose.d.yaml up --build
@@ -152,7 +129,9 @@ sudo docker-compose  --file docker-compose.d.yaml up --build
 
 **Run in prod mode**
 
-If you would like to run chattergram in your own environment, there are a few prerequisites.
+If you would like to run chattergram in your own environment, there are a few prerequisites. Or maybe not, if you're an experienced sysadmin.
+
+In any way, these were the points I set up for the demo:
 
 - You must have a valid domainname
 - In the frontend, you must adjust the constants `BASE_URL` for axios and `WS_BASE_URL` for the websocket connection to match your domain. (You can do a quick `CTRL+SHIFT+F` to search & replace `chat.q-bit.me`)
@@ -188,7 +167,7 @@ sudo docker-compose  --file docker-compose.p.yaml up --build
 <!-- USAGE EXAMPLES -->
 ## Usage
 
- After starting the app, open a browser at `localhost:3000/` (dev) or `localhost` (production) & create a new account.
+ After starting the app, open a browser at `localhost:3000/` (dev) or your domain name (production) & create a new account.
 
 > All your information will be stored in a local PostgreSQL database
 
@@ -205,7 +184,7 @@ Select another user and start using STT. You can also use Chattergram for good-o
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -213,6 +192,10 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <!-- CONTACT -->
 ## Contact
+
+Please tell me how you liked the submission. You can reach me on Twitter or on [dev.to](https://dev.to/tqbit)
+
+> Please note that I will not actively develop this app. You're welcome to fork it and do your thing :-)
 
 Mail: [tobi@q-bit.me](mailto:tobi@q-bit.me)
 Twitter: [@qbitme](https://twitter.com/qbitme)
@@ -228,10 +211,10 @@ Project Link: [https://github.com/tq-bit/chattergram](https://github.com/tq-bit/
 
 Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 
+* [Tsvetomira Dichevska](https://www.linkedin.com/in/tsvetomira-dichevska/) thank you for creating my Logo and help me figure out this idea
 * [Othneildrew's Best-README-Template](https://github.com/othneildrew/Best-README-Template)
 * [Heroicons](https://heroicons.com/)
 * [@sinclair/typebox](https://www.npmjs.com/package/@sinclair/typebox)
-* [Tsvetomira Dichevska](https://www.linkedin.com/in/tsvetomira-dichevska/) thank you for creating my Logo and help me figure out this idea
 * [Img Shields](https://shields.io)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
