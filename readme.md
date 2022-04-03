@@ -108,8 +108,8 @@ Chattergram uses the Deepgram API for STT. So register and grab an API key.
    ```sh
    git clone https://github.com/tq-bit/chattergram.git
    ```
-4. Create a `.env` file in the root directory (you can use the .env.example file for templating)
-5. Enter your API key under `DEEPGRAM_KEY`
+4. Run `sh bin/setup` and pass in your API key OR
+5. Create a `.env` file in the root directory (you can use the .env.example file for templating) + enter your API key under `DEEPGRAM_KEY`
 
 > Note: If you change global variables in this file, you have to adjust the respective docker-compose.(d|p).yaml file as well
 
@@ -124,7 +124,7 @@ There are two docker-compose files in the root directory. Each runs a few simple
 After cloning the repos, run:
 
 ```bash
-sudo docker-compose  --file docker-compose.d.yaml up --build
+sudo bin/start -d
 ```
 
 **Run in prod mode**
@@ -157,7 +157,7 @@ location /ws/ {
 Finally, you can start the app by using:
 
 ```bash
-sudo docker-compose  --file docker-compose.p.yaml up --build
+sudo bin/start -p
 ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
