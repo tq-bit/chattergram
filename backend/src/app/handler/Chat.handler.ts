@@ -52,7 +52,6 @@ class ChatHandler extends Handler {
 
     let incomingPayload = req.body as UserChatSchemaType;
 
-    await this.checkIfChatPartnersAreEqual(reply, session.userId, incomingPayload.receiverId);
     await this.checkIfChatPartnersExist(reply, session.userId, incomingPayload.receiverId);
     await this.processAudioFileIfExists(reply, incomingPayload);
 
@@ -146,16 +145,6 @@ class ChatHandler extends Handler {
 
   private getChatPartnerId = (req: ChatRequest) => {
     return req.params.partnerId;
-  };
-
-  private checkIfChatPartnersAreEqual = async (
-    reply: FastifyReply,
-    senderId?: number,
-    receiverId?: number
-  ) => {
-    if (senderId === receiverId) {
-      return reply.badRequest('Sender and receiver cannot be equal');
-    }
   };
 
   private checkIfChatPartnersExist = async (
