@@ -160,9 +160,9 @@ Finally, you can start the app by using:
 sudo bin/start -p
 ```
 
+You can restart the app to incorporate your latest changes by running `sudo bin/restart`.
+
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- USAGE EXAMPLES -->
 ## Usage
