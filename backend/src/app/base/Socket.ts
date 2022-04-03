@@ -45,6 +45,10 @@ class Socket {
       const sender = this.getSubscriberById(payload.senderId);
       const receiver = this.getSubscriberById(payload.receiverId);
 
+      if(sender === receiver) {
+        return console.log('You cannot send a message to yourself.')
+      }
+
       console.log(`Message from ${payload.senderId} to ${payload.receiverId}`);
 
       sender?.socket.send(JSON.stringify(payload));
