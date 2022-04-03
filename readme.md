@@ -124,7 +124,7 @@ There are two docker-compose files in the root directory. Each runs a few simple
 After cloning the repos, run:
 
 ```bash
-sudo bin/start -d
+sudo bin/start.sh -d
 ```
 
 **Run in prod mode**
@@ -157,7 +157,7 @@ location /ws/ {
 Finally, you can start the app by using:
 
 ```bash
-sudo bin/start -p
+sudo bin/start.sh -p
 ```
 
 You can restart the app to incorporate your latest changes by running `sudo bin/restart`.
