@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Start the app in dev or prod mode
-while getopts edf: flag; do
+while getopts dp flag; do
   case "${flag}" in
   d)
     echo "Starting Chattergram in dev mode"
