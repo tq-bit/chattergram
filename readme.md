@@ -15,8 +15,9 @@
     A chat application that transcribes voice messages to text
   </p>
   <div align="center">
-    <img alt="GitHub" src="https://img.shields.io/github/license/tq-bit/chattergram">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/tq-bit/chattergram">
+    <img alt="GitHub" src="https://img.shields.io/github/license/tq-bit/chattergram?style=plastic&logo=appveyor">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/tq-bit/chattergram?style=plastic&logo=appveyor">
+    <img alt="Swagger Validator" src="https://img.shields.io/swagger/valid/3.0?specUrl=https%3A%2F%2Fchat.q-bit.me%2Fapi%2Fdocs%2Fjson?style=plastic&logo=appveyor">
   </div>
 </div>
 
