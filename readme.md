@@ -10,7 +10,7 @@
   <h3 align="center">Chattergram</h3>
 
   <p align="center">
-    Transcribe speech messages into written text
+    A chat application that transcribes voice messages to text
   </p>
 </div>
 
