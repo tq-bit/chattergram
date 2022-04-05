@@ -19,7 +19,7 @@
 
 Chattergram is a full-stack Typescript chat application. With a particular extra:
 
-> It transcribes other people's (english) voice messages into writte text for you (and vice versa)
+> It transcribes other people's (english) voice messages into written text for you
 
 [![Chattergram landingpage][product-screenshot]](#)
 
