@@ -47,7 +47,7 @@ I've created it for the [Dev.to & Deepgram Hackathon](https://dev.to/devteam/joi
 - Above all: Voice message transcription from recorded audiofiles
 - User authentication
 - Persistent chats
-- Developed using Docker & docker-compose
+- Swift deployment with docker & docker-compose
 - Typed data structures & OpenAPI specification under `/api/docs`
 - Last but not least: Light & darkmode
 
