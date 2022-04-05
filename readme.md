@@ -15,10 +15,15 @@
     A chat application that transcribes voice messages to text
   </p>
   <div align="center">
-    <img alt="GitHub" src="https://img.shields.io/github/license/tq-bit/chattergram?style=plastic&logo=appveyor">
-    <img alt="Demo" src="https://img.shields.io/badge/Demo-Hosted%20on%20DO-blue?style=plastic&logo=digitalocean">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/tq-bit/chattergram?style=plastic&logo=git">
-    <img alt="Swagger Validator" src="https://img.shields.io/swagger/valid/3.0?specUrl=https%3A%2F%2Fchat.q-bit.me%2Fapi%2Fdocs%2Fjson&style=plastic&logo=swagger">
+    <a href=""></a>
+    <img alt="GitHub" src="https://img.shields.io/github/license/tq-bit/chattergram?style=plastic&logo=apache"/>
+    <a href="https://chat.q-bit.me">
+      <img alt="Demo" src="https://img.shields.io/badge/Demo-Hosted%20on%20DO-blue?style=plastic&logo=digitalocean"/>
+    </a>
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/tq-bit/chattergram?style=plastic&logo=git"/>
+    <a href="https://chat.q-bit.me/api/docs/static/index.html">
+      <img alt="Swagger Validator" src="https://img.shields.io/swagger/valid/3.0?specUrl=https%3A%2F%2Fchat.q-bit.me%2Fapi%2Fdocs%2Fjson&style=plastic&logo=swagger"/>
+    </a>
   </div>
 </div>
 
