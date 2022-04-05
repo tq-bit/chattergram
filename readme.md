@@ -1,6 +1,6 @@
 <div id="top"></div>
 
-<img alt="GitHub" src="https://img.shields.io/github/license/tq-bit/chattergram">
+
 
 <!-- PROJECT LOGO -->
 <br />
@@ -14,6 +14,10 @@
   <p align="center">
     A chat application that transcribes voice messages to text
   </p>
+  <div align="center">
+    <img alt="GitHub" src="https://img.shields.io/github/license/tq-bit/chattergram">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/tq-bit/chattergram">
+  </div>
 </div>
 
 <!-- ABOUT THE PROJECT -->
