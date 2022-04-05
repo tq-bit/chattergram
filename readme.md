@@ -1,5 +1,7 @@
 <div id="top"></div>
 
+<img alt="GitHub" src="https://img.shields.io/github/license/tq-bit/chattergram">
+
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
