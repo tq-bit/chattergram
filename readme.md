@@ -37,8 +37,7 @@ Chattergram is a full-stack Typescript chat application. With a particular extra
 
 [![Chattergram landingpage][product-screenshot]](#)
 
-I've created it for the [Dev.to & Deepgram Hackathon](https://dev.to/devteam/join-us-for-a-new-kind-of-hackathon-on-dev-brought-to-you-by-deepgram-2bjd). And to make a wish upon a shining star (Frankly speaking, I'd rather skim through 5 seconds of text than listening to 3 minutes of a stopwords-filled monologue. And Deepgram gets rid of most of these by default).
-
+I've created Chattergram for the [Dev.to & Deepgram Hackathon](https://dev.to/devteam/join-us-for-a-new-kind-of-hackathon-on-dev-brought-to-you-by-deepgram-2bjd). **It stands in no affiliation to the Android app ['Chattergram for Android'](https://apkpure.com/chattergram/com.wChattergram_5331914).**
 
 [![Chattergram audio recording][example-screenshot-I]](#)
 <div align="center">Recorded voice messages are automatically transcribed by <a href="https://developers.deepgram.com/api-reference/">Deepgram's Audio API.</a>.  </div>
